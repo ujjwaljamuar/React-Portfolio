@@ -24,7 +24,7 @@ const Footer = () => {
 
                 <article>
                     <a
-                        href="https://linkedin/in/ujjwal-jamuar"
+                        href="https://linkedin.com/in/ujjwal-jamuar"
                         target={"blank"}
                     >
                         <AiFillLinkedin />
