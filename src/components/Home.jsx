@@ -9,7 +9,7 @@ const Home = ({ ratio }) => {
     const projectCount = useRef(null);
 
     const animationClientsCount = () => {
-        animate(0, 100, {
+        animate(0, 2, {
             duration: 1,
             onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
         });
@@ -80,7 +80,7 @@ const Home = ({ ratio }) => {
                                 </motion.span>
                             )}
                         </p>
-                        <span>Clients Worldwide</span>
+                        <span>Years of Experience</span>
                     </article>
 
                     <aside>
@@ -106,7 +106,9 @@ const Home = ({ ratio }) => {
                     </aside>
                 </div>
             </section>
-            <section>{/* <img src={me} alt="Ujjwal" /> */}</section>
+            <section>
+                <img src={me} alt="Ujjwal" />
+            </section>
             <BsChevronDown />
         </div>
     );

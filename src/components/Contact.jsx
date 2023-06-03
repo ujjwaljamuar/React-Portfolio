@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
+import DownloadCSV from "./DownloadCSV";
 
 const Contact = () => {
     const [name, setName] = useState("");
@@ -94,6 +95,7 @@ const Contact = () => {
                         Send
                     </motion.button>
                 </motion.form>
+                <DownloadCSV />
             </section>
             <aside>
                 <img src={vg} alt="Graphics" />
