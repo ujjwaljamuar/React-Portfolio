@@ -11,13 +11,13 @@ const Home = ({ ratio }) => {
     const animationClientsCount = () => {
         animate(0, 100, {
             duration: 1,
-            onUpdate: (v) => (clientCount.current.textContent = v.toFixed())
+            onUpdate: (v) => (clientCount.current.textContent = v.toFixed()),
         });
     };
     const animationProjectsCount = () => {
         animate(0, 50, {
             duration: 1,
-            onUpdate: (v) => (projectCount.current.textContent = v.toFixed())
+            onUpdate: (v) => (projectCount.current.textContent = v.toFixed()),
         });
     };
 
@@ -75,7 +75,9 @@ const Home = ({ ratio }) => {
                                 <motion.span
                                     whileInView={animationClientsCount}
                                     ref={clientCount}
-                                >100</motion.span>
+                                >
+                                    100
+                                </motion.span>
                             )}
                         </p>
                         <span>Clients Worldwide</span>
@@ -104,9 +106,7 @@ const Home = ({ ratio }) => {
                     </aside>
                 </div>
             </section>
-            <section>
-                <img src={me} alt="Ujjwal" />
-            </section>
+            <section>{/* <img src={me} alt="Ujjwal" /> */}</section>
             <BsChevronDown />
         </div>
     );
