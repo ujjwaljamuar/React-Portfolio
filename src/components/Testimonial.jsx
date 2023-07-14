@@ -11,14 +11,14 @@ const Testimonial = () => {
                 />
 
                 <TestimonialCard
-                    name={"Ramzi"}
+                    name={"Barkha"}
                     feedback={
-                        "Wow what a portfolio, perfectly structured"
+                        "Wow, Nice portfolio, perfectly structured"
                     }
                 />
 
                 <TestimonialCard
-                    name={"Peter"}
+                    name={"Praveen"}
                     feedback={"Amazing, seems like a whole react package"}
                 />
             </section>
