@@ -3,7 +3,7 @@
     {
       "date": "07/10/2022",
       "title": "REACT APP",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "This is a simple preview of a single-page-web-app developed using ReactJs with a pinch of powerful css.",
       "url": "https://single-page-react-app-ujjwaljamuar.vercel.app",
       "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
     },
@@ -11,14 +11,14 @@
     {
       "date": "11/10/2022",
       "title": "VIDEO HUB",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "A simple web-app with some powerful css, with preview of login and signup pages, upload video button and a video player with dark mode integrated.",
       "url": "https://chakra-ui-project-ujjwaljamuar.vercel.app",
       "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
     },
     {
       "date": "15/10/2022",
-      "title": "XCrypto",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "title": "CRYPTON",
+      "description": "Crypto currency real time information provider app using ReactJS, shows top 100 coin exchanges, market value in three currencies, built-in graph and lot more.",
       "url": "https://crypto-react-web-app-ujjwaljamuar.vercel.app",
       "imgSrc": "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg"
     },
@@ -26,14 +26,14 @@
     {
       "date": "17/10/2022",
       "title": "CART",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "A simple demonstration of cart in an E Commerce Website, can add, delete, update products and purchase Item.",
       "url": "https://react-cart-ujjwaljamuar.vercel.app",
       "imgSrc": "https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_960_720.jpg"
     },
     {
       "date": "20/10/2022",
       "title": "PORTFOLIO",
-      "description": "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "description": "Portfolio using ReactJS and Firebase, showcase of my Technical and UI Skills, built-in contact form.",
       "url": "/",
       "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
     }
