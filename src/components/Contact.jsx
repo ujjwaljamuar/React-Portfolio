@@ -1,16 +1,25 @@
 import { useState } from "react";
+// import { Resend } from "resend";
+
 import vg from "../assets/vg.png";
 import toast from "react-hot-toast";
 import { motion } from "framer-motion";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../firebase";
 import DownloadCSV from "./DownloadCSV";
+import axios from "axios";
 
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [disableBtn, setDisableBtn] = useState(false);
+
+    const data = {
+        name,
+        email,
+        message,
+    };
 
     const submitHandler = async (e) => {
         e.preventDefault();
@@ -21,6 +30,10 @@ const Contact = () => {
                 email,
                 message,
             });
+
+            await axios.post("https://resend-mailer-backend.vercel.app", { data });
+            // console.log(data);
+
             setName("");
             setEmail("");
             setMessage("");
