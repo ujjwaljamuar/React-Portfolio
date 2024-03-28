@@ -2,12 +2,12 @@ import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDG4rkF1TMy-vezCky8vxZcVtcMk0dWiyc",
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
   authDomain: "react-portfolio-ujjwal.firebaseapp.com",
   projectId: "react-portfolio-ujjwal",
   storageBucket: "react-portfolio-ujjwal.appspot.com",
-  messagingSenderId: "922312597160",
-  appId: "1:922312597160:web:d37019125547c043dbec9d"
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore();

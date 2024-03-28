@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { SiSpringboot } from "react-icons/si";
-import { FaPython, FaJava, FaReact } from "react-icons/fa";
+import { FaPython, FaRust, FaReact, FaAws, FaCloud } from "react-icons/fa";
 
 const Services = () => {
     const animations = {
@@ -63,14 +63,38 @@ const Services = () => {
                     whileInView={animations.whileInView}
                     initial={animations.four}
                 >
-                    <FaJava />
-                    <span>Java</span>
+                    <FaAws />
+                    <span>AWS</span>
                 </motion.div>
 
                 <motion.div
                     className="serviceBox5"
                     whileInView={animations.whileInView}
                     initial={animations.four}
+                >
+                    <FaCloud />
+                    <span>DevOps</span>
+                </motion.div>
+
+                <motion.div
+                    className="serviceBox6"
+                    whileInView={animations.whileInView}
+                    initial={animations.four}
+                    transition={{
+                        delay: 0.1,
+                    }}
+                >
+                    <FaRust />
+                    <span>Rust</span>
+                </motion.div>
+
+                <motion.div
+                    className="serviceBox7"
+                    whileInView={animations.whileInView}
+                    initial={animations.four}
+                    transition={{
+                        delay: 0.1,
+                    }}
                 >
                     <FaPython />
                     <span>Python</span>
