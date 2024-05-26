@@ -21,7 +21,7 @@
         justify-content: center;
 
         > article {
-            width: 70%;
+            width: 85%;
             height: 25vmax;
         }
 
@@ -32,7 +32,7 @@
             margin: auto;
             background-color: $color4;
             display: flex;
-            padding: 2rem;
+            padding: .5rem;
             box-shadow: 0 0 20px 5px $color1;
 
             > img {
@@ -49,8 +49,8 @@
                 align-items: center;
 
                 > p {
-                    letter-spacing: 3px;
-                    line-height: 180%;
+                    letter-spacing: 2px;
+                    line-height: 150%;
                     margin: 2rem;
                 }
                 > a {

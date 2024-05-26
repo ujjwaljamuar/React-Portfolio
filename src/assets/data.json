@@ -1,19 +1,28 @@
 {
   "projects": [
     {
-      "date": "07/10/2022",
-      "title": "REACT APP",
-      "description": "This is a simple preview of a single-page-web-app developed using ReactJs with a pinch of powerful css.",
-      "url": "https://single-page-react-app-ujjwaljamuar.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg"
+      "date": "05/03/2024",
+      "title": "CODE DEPLOYER",
+      "description": "Built a project using NodeJS, TypeScript, AWS S3 and Redis that automates the process of cloning, building and deploying a react project on machine.",
+      "url": "https://github.com/ujjwaljamuar/code-deployer-aws-cloudflare",
+      "imgSrc": "https://cdn.pixabay.com/photo/2019/09/09/08/23/internet-4463031_1280.jpg"
     },
 
     {
       "date": "11/10/2022",
-      "title": "VIDEO HUB",
-      "description": "A simple web-app for video contents with some powerful css, and a preview of login and signup pages, with Dark Mode.",
-      "url": "https://chakra-ui-project-ujjwaljamuar.vercel.app",
-      "imgSrc": "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg"
+      "title": "COURSE HUB",
+      "description": "Subscription based learning platform with payment Integration, users can search, request, purchase, watch videos. Admins can watch stats on dashboard, manage roles, users, courses.",
+      "url": "https://coursehub-frontend.vercel.app",
+      "imgSrc": "https://cdn.pixabay.com/photo/2022/11/02/18/06/webcam-7565723_1280.png"
+    },
+    
+
+    {
+      "date": "11/10/2022",
+      "title": "DevSecOps",
+      "description": "Deployed robust application on AWS EC2 using Docker, Jenkins, SonarQube, Trivy FS, Prometheus, Grafana, Owasp dependency check, Kubernetes and ArgoCD for efficient resource management, CI/CD, Code Quality, System Monitoring and Visualization, Application security and High Availability.",
+      "url": "https://github.com/ujjwaljamuar/DevSecOps-Project",
+      "imgSrc": "https://cdn.pixabay.com/photo/2015/05/25/05/27/network-782707_1280.png"
     },
     {
       "date": "15/10/2022",
@@ -29,13 +38,6 @@
       "description": "A simple demonstration of cart in an E Commerce Website, can add, delete, update products and purchase Item.",
       "url": "https://react-cart-ujjwaljamuar.vercel.app",
       "imgSrc": "https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_960_720.jpg"
-    },
-    {
-      "date": "20/10/2022",
-      "title": "PORTFOLIO",
-      "description": "Portfolio using ReactJS and Firebase, showcase of my Technical and UI Skills, built-in contact form.",
-      "url": "/",
-      "imgSrc": "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg"
     }
   ]
 }
