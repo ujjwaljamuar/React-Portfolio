@@ -9,7 +9,7 @@
     },
 
     {
-      "date": "11/10/2022",
+      "date": "08/03/2024",
       "title": "COURSE HUB",
       "description": "Subscription based learning platform with payment Integration, users can search, request, purchase, watch videos. Admins can watch stats on dashboard, manage roles, users, courses.",
       "url": "https://coursehub-frontend.vercel.app",
@@ -18,7 +18,7 @@
     
 
     {
-      "date": "11/10/2022",
+      "date": "02/05/2024",
       "title": "DevSecOps",
       "description": "Deployed robust application on AWS EC2 using Docker, Jenkins, SonarQube, Trivy FS, Prometheus, Grafana, Owasp dependency check, Kubernetes and ArgoCD for efficient resource management, CI/CD, Code Quality, System Monitoring and Visualization, Application security and High Availability.",
       "url": "https://github.com/ujjwaljamuar/DevSecOps-Project",
