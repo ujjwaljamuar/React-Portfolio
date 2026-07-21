@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import ReactECharts from "echarts-for-react";
 import toast from "react-hot-toast";
 import { FiExternalLink } from "react-icons/fi";
@@ -59,6 +59,7 @@ const AdminDsa = () => {
     status: "",
     tag: "",
   });
+  const hasInitializedSearch = useRef(false);
 
   const loadProblems = async () => {
     const result = await getProblems();
@@ -88,6 +89,11 @@ const AdminDsa = () => {
       const query = searchText.trim();
 
       if (!query) {
+        if (!hasInitializedSearch.current) {
+          hasInitializedSearch.current = true;
+          return;
+        }
+
         loadProblems();
         return;
       }
