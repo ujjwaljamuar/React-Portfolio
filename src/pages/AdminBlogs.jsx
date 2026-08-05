@@ -88,7 +88,11 @@ const AdminBlogs = () => {
                     <td>{formatDate(blog.updatedAt)}</td>
                     <td>
                       <div className="adminActions">
-                        <Link to={`/admin/blogs/edit/${blog._id}`}>Edit</Link>
+                        <Link
+                          to={`/admin/blogs/edit/${encodeURIComponent(blog.slug)}`}
+                        >
+                          Edit
+                        </Link>
                         <button onClick={() => handleDelete(blog._id)}>
                           Delete
                         </button>

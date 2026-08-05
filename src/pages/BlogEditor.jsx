@@ -5,22 +5,17 @@ import { FiUploadCloud } from "react-icons/fi";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import {
   createBlog,
-  getAdminBlogs,
+  getAdminBlogBySlug,
   uploadBlogImage,
   updateBlog,
 } from "../services/blogService";
-import {
-  emptyBlogForm,
-  normalizeBlogList,
-  slugify,
-  tagsToText,
-  textToTags,
-} from "../utils/blog";
+import { emptyBlogForm, slugify, tagsToText, textToTags } from "../utils/blog";
 
 const BlogEditor = () => {
-  const { id } = useParams();
+  const { slug } = useParams();
   const navigate = useNavigate();
-  const isEdit = Boolean(id);
+  const isEdit = Boolean(slug);
+  const [blogId, setBlogId] = useState("");
   const [form, setForm] = useState(emptyBlogForm);
   const [loading, setLoading] = useState(isEdit);
   const [saving, setSaving] = useState(false);
@@ -33,8 +28,7 @@ const BlogEditor = () => {
 
     const loadBlog = async () => {
       try {
-        const result = await getAdminBlogs();
-        const blog = normalizeBlogList(result).find((item) => item._id === id);
+        const blog = await getAdminBlogBySlug(slug);
 
         if (!blog) {
           toast.error("Blog not found");
@@ -42,6 +36,7 @@ const BlogEditor = () => {
           return;
         }
 
+        setBlogId(blog._id || blog.id || "");
         setForm({
           title: blog.title || "",
           slug: blog.slug || "",
@@ -57,7 +52,7 @@ const BlogEditor = () => {
     };
 
     loadBlog();
-  }, [id, isEdit, navigate]);
+  }, [slug, isEdit, navigate]);
 
   const updateField = (field, value) => {
     setForm((current) => ({
@@ -114,7 +109,7 @@ const BlogEditor = () => {
 
     try {
       if (isEdit) {
-        await updateBlog(id, payload);
+        await updateBlog(blogId, payload);
         toast.success("Blog updated");
       } else {
         await createBlog(payload);

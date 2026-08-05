@@ -116,7 +116,7 @@ function App() {
         <Route element={<ProtectedRoute />}>
           <Route path="/admin/blogs" element={<AdminBlogs />} />
           <Route path="/admin/blogs/new" element={<BlogEditor />} />
-          <Route path="/admin/blogs/edit/:id" element={<BlogEditor />} />
+          <Route path="/admin/blogs/edit/:slug" element={<BlogEditor />} />
           <Route path="/admin/dsa" element={<AdminDsa />} />
           <Route path="/admin/dsa/view/:id" element={<AdminDsaDetail />} />
           <Route path="/admin/dsa/new" element={<DsaEditor />} />
